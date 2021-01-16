@@ -82,7 +82,12 @@ var a = obj.numbers.a;
 var b = obj.numbers.b;
 ES2015 Object Destructuring     */
 
-const { numbers: { a, b } } = obj;
+// my original method
+// const { numbers: { a, b } } = obj; not sure what is better?  This or...
+
+// suggested solution
+const {a,b}=obj.numbers
+
 
 // ----- S5 Array Swap -----
 var arr = [
